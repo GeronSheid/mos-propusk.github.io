@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +10,11 @@
   <link href="https://fonts.googleapis.com/css?family=Inter:700&display=swap&_v=20230607175803" rel="stylesheet" />
   <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230607175803" />
   <link rel="stylesheet" href="css/style.min.css?_v=20230607175803">
-  <title>Главная</title>
+  <title>Контакты</title>
 </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
+<body>
+  <div class="wrapper">
+    <header class="header">
   <div class="header__top header-top">
     <div class="container header__container">
       <div class="header-top__wrap">
@@ -323,161 +323,89 @@
 
 <!-- Доработать выпадающие меню, подключить JS -->
 
-      <main class="main">
-        <section class="why-we">
-          <div class="container why-we__container">
-            <div class="why-we__img-wrap">
-              <img src="img/why-we/accountant.png" alt="" />
-              <div class="why-we__content">
-                <h1 class="section-title why-we__title">
-                  Почему выбирают нашу компанию?
-                </h1>
-                <p class="why-we__txt">
-                  Компания «MOS-PROPUSK-24» — более 7 лет помогаем получать
-                  пропуска на MКАД, ТТK И СК — Мы внимательно проверяем ваши
-                  документы и оперативно отправляем заявку на пропуск. В отличии
-                  от 99% компаний занимающихся оформлением пропусков у нас есть
-                  реальный офис в Москве и мы несем полную ответственность за ваш
-                  пропуск! Нашли вариант дешевле? Знайте, в случае аннуляции
-                  пропуска вы получите огромные штрафы, а фирма, которая оформляла
-                  пропуск перестанет
-                </p>
+    <main class="main">
+      <section class="contacts">
+        <div class="container">
+            <h2 class="section-title contacts__title">Контакты</h2>
+            <div class="section-text contacts__txt">
+                Официальная организация с реальным офисом в Москве! <span>3000 довольных клиентов!</span> РЖД, DHL, ПЭК,
+                 Почта России и многие другие! <span>Опыт работы 7 лет!</span> Оплата за наличный расчет, безналичный без НДС и с НДС 20%!
+            </div>
+            <div class="contacts-wrapper">
+                <picture><source srcset="img/contacts/map.webp" type="image/webp"><img src="img/contacts/map.png" alt="" class="contacts-map"></picture>
+                <div class="contacts-column">
+                    <div class="contacts-column__top">
+                        <ul>
+                            <li class="contact-info">
+                                <img src="img/contacts/info1.svg" alt="">
+                                <div>Москва, ул. Соловьиная Роща, 8, офис: “МОС-ПРОПУСК-24”</div>
+                            </li>
+                            <li class="contact-info">
+                                <img src="img/contacts/info2.svg" alt="">
+                                <div><span>8(495) 128-86-89</span></div>
+                            </li>
+                            <li class="contact-info">
+                                <img src="img/contacts/info3.svg" alt="">
+                                <div>info@mos-propusk-24.ru</div>
+                            </li>
+                            <li class="contact-info">
+                                <img src="img/contacts/info4.svg" alt="">
+                                <div>Ежедневно 08:00 - 23:00</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts-column__bottom">
+                        <a href="#">
+                            <img src="img/contacts/whatsapp.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/contacts/telegram.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/contacts/vk.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/contacts/youtube.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/contacts/dzen.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </section>
+      <section class="inn">
+        <div class="container inn__container">
+          <h2 class="section-title section-title_small inn__title">
+            Остались вопросы?
+          </h2>
+          <p class="section-txt inn__txt">
+            Заполняйте форму и мы <span>свяжемся с вами в течении 30 секунд</span> и ответим на все интересующие вас вопросы!
+          </p>
+          <div class="inn__wrap">
+            <picture><source srcset="img/consult-form/woman.webp" type="image/webp"><img src="img/consult-form/woman.png" alt="женщина"></picture>
+            <form class="consult-form inn__form" action="/"  method="POST">
+              <h2 class="consult-form__title">
+                Отправить заявку на <span>консультацию</span>
+              </h2>
+              <div class="consult-form__inputs-wrap">
+                <input class="input consult-form__input" type="text" placeholder="Имя:*">
+                <input class="input consult-form__input" type="tel" placeholder="Телефон:*">
+                <input class="input consult-form__input" type="text" placeholder="E-mail*">
+                <textarea class="input consult-form__textarea" rows="fixed" name="" id="" placeholder="Текст сообщения"></textarea>
               </div>
-            </div>
-            <div class="why-we__info">
-              <ul class="why-we__list">
-                <li class="why-we__item">
-                  Наличный и безналичный расчет с НДС 20% и без!
-                </li>
-                <li class="why-we__item">Гарантия получения 100%!</li>
-                <li class="why-we__item">100% результат Без отказов!</li>
-                <li class="why-we__item">Официально по договору!</li>
-              </ul>
-            </div>
+              <div class="consult-form__btn-wrap">
+                <button id="consult-form-btn" class="btn">подробнее</button>
+                <label for="consult-form-btn">Нажимая на кнопку, Вы даете согласие на обработку <a class="underline" href="#">персональных данных</a></label>
+              </div>
+            </form>
           </div>
-        </section>
-        <section class="our-team">
-          <div class="container our-team__container">
-            <h2 class="section-title section-title_small our-team__title">
-              Наши команда
-            </h2>
-            <div class="our-team__wrap">
-              <div class="our-team__card team-card">
-                <div class="team-card__img-wrap">
-                  <picture><source srcset="img/our-team/team-1.webp" type="image/webp"><img src="img/our-team/team-1.png" alt=""></picture>
-                  <picture><source srcset="img/our-team/hover.webp" type="image/webp"><img class="hover-img" src="img/our-team/hover.png" alt=""></picture>
-                  <div class="team-card__content">
-                    <b>
-                      Алексей Орлов
-                    </b>
-                    <span>
-                      Директор по развитию
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="our-team__card team-card">
-                <div class="team-card__img-wrap">
-                  <picture><source srcset="img/our-team/team-2.webp" type="image/webp"><img src="img/our-team/team-2.png" alt=""></picture>
-                  <picture><source srcset="img/our-team/hover.webp" type="image/webp"><img class="hover-img" src="img/our-team/hover.png" alt=""></picture>
-                  <div class="team-card__content">
-                    <b>
-                      Алексей Орлов
-                    </b>
-                    <span>
-                      Директор по развитию
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="our-team__card team-card">
-                <div class="team-card__img-wrap">
-                  <picture><source srcset="img/our-team/team-3.webp" type="image/webp"><img src="img/our-team/team-3.png" alt=""></picture>
-                  <picture><source srcset="img/our-team/hover.webp" type="image/webp"><img class="hover-img" src="img/our-team/hover.png" alt=""></picture>
-                  <div class="team-card__content">
-                    <b>
-                      Алексей Орлов
-                    </b>
-                    <span>
-                      Директор по развитию
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="our-team__card team-card">
-                <div class="team-card__img-wrap">
-                  <picture><source srcset="img/our-team/team-4.webp" type="image/webp"><img src="img/our-team/team-4.png" alt=""></picture>
-                  <picture><source srcset="img/our-team/hover.webp" type="image/webp"><img class="hover-img" src="img/our-team/hover.png" alt=""></picture>
-                  <div class="team-card__content">
-                    <b>
-                      Алексей Орлов
-                    </b>
-                    <span>
-                      Директор по развитию
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="our-clients">
-          <div class="container our-clients__container">
-            <h2 class="section-title section-title_small our-clients__title">
-              Наши клиенты
-            </h2>
-            <div class="our-clients__wrap">
-              <picture><source srcset="img/our-clients/abb-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/abb-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/kostorama-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/kostorama-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/lukoil-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/lukoil-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/red-kit-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/red-kit-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/auchan-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/auchan-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/sportmaster-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/sportmaster-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/samsung-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/samsung-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/park-patriot-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/park-patriot-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/dhl-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/dhl-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/fsb-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/fsb-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/egd-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/egd-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/leroy-merlin-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/leroy-merlin-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/spartak-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/spartak-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/svjaznoi-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/svjaznoi-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/tvc-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/tvc-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/roskosmos-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/roskosmos-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/wildberries-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/wildberries-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/beeline-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/beeline-mos-propusk-24_result.png" alt=""></picture>
-            </div>
-          </div>
-        </section>
-        <section class="inn">
-          <div class="container inn__container">
-            <h2 class="section-title section-title_small inn__title">
-              Запросить ИНН нашей организации
-            </h2>
-            <p class="section-txt inn__txt">
-              Заполняйте форму и мы <span>свяжемся с вами в течении 30 секунд</span> и ответим на все интересующие вас вопросы!
-            </p>
-            <div class="inn__wrap">
-              <picture><source srcset="img/consult-form/woman.webp" type="image/webp"><img src="img/consult-form/woman.png" alt="женщина"></picture>
-              <form class="consult-form inn__form" action="/"  method="POST">
-                <h2 class="consult-form__title">
-                  Отправить заявку на <span>консультацию</span>
-                </h2>
-                <div class="consult-form__inputs-wrap">
-                  <input class="input consult-form__input" type="text" placeholder="Имя:*" name="name" maxlength="15">
-                  <input class="input consult-form__input" type="tel" placeholder="Телефон:*" name="phone-number" maxlength="15">
-                  <input class="input consult-form__input" type="text" placeholder="E-mail*" name="mail" maxlength="15">
-                  <textarea class="input consult-form__textarea" rows="fixed" name="" id="" placeholder="Текст сообщения" name="message" maxlength="400"></textarea>
-                </div>
-                <div class="consult-form__btn-wrap">
-                  <button id="consult-form-btn" class="btn">подробнее</button>
-                  <label for="consult-form-btn">Нажимая на кнопку, Вы даете согласие на обработку <a class="underline" href="#">персональных данных</a></label>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
   <div class="container footer__container">
     <div class="footer__wrap">
       <div class="footer__top footer-top">
@@ -574,7 +502,7 @@
   </div>
 </footer>
 
-    </div>
-    <script src="js/app.min.js?_v=20230607175803"></script>
-  </body>
+  </div>
+  <script src="js/app.min.js?_v=20230607175803"></script>
+</body>
 </html>

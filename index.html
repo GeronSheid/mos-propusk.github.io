@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Golos+Text:regular,500,700&display=swap&_v=20230605230256" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Oswald:regular,500,700&display=swap&_v=20230605230256" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700&display=swap&_v=20230605230256" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Inter:700&display=swap&_v=20230605230256" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230605230256">
+  <link href="https://fonts.googleapis.com/css?family=Golos+Text:regular,500,700&display=swap&_v=20230607175803" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald:regular,500,700&display=swap&_v=20230607175803" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700&display=swap&_v=20230607175803" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:700&display=swap&_v=20230607175803" rel="stylesheet" />
+  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230607175803" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230607175803">
   <title>Главная</title>
 </head>
   <body>
@@ -191,17 +192,17 @@
           </div>
           <ul class="header-menu__sub-list">
             <li class="header-menu__sub-item">
-              <a href="" class="header-menu__sub-link">
+              <a href="/check-number.html" class="header-menu__sub-link">
                 категория
               </a>
             </li>
             <li class="header-menu__sub-item">
-              <a href="" class="header-menu__sub-link">
+              <a href="/info.html" class="header-menu__sub-link">
                 категория
               </a>
             </li>
             <li class="header-menu__sub-item">
-              <a href="" class="header-menu__sub-link">
+              <a href="/article.html" class="header-menu__sub-link">
                 категория
               </a>
             </li>
@@ -307,13 +308,13 @@
           <a href="" class="header-menu__link">Проверка пропуска</a>
         </li>
         <li class="header-menu__item">
-          <a href="" class="header-menu__link">Отзывы</a>
+          <a href="/reviews.html" class="header-menu__link">Отзывы</a>
         </li>
         <li class="header-menu__item">
-          <a href="" class="header-menu__link">Информация</a>
+          <a href="/info.html" class="header-menu__link">Информация</a>
         </li>
         <li class="header-menu__item">
-          <a href="" class="header-menu__link">Контакты</a>
+          <a href="/contacts.html" class="header-menu__link">Контакты</a>
         </li>
       </ul>
     </div>
@@ -341,7 +342,7 @@
         </section>
         <section class="pass">
           <div class="container">
-              <h2 class="section-title">Чем грозит отсутствие пропуска?</h2>
+              <h2 class="section-title pass__title">Чем грозит отсутствие пропуска?</h2>
               <div class="brickWrapp">
                   <picture><source srcset="img/pass/brick.webp" type="image/webp"><img src="img/pass/brick.png" alt="" class="brickImg"></picture>
                   <div class="sectionText sectionText__brick">Учитывая существующую экологическую ситуацию в столице и другие важные факторы 
@@ -372,7 +373,7 @@
         </section>
         <section class="our-services">
           <div class="container">
-              <h2 class="section-title">Наши услуги</h2>
+              <h2 class="section-title our-services__title">Наши услуги</h2>
               <div class="servicesFlex">
                   <div class="serviceWrapp">
                       <picture><source srcset="img/our-services/MoscowMCAR.webp" type="image/webp"><img src="img/our-services/MoscowMCAR.png" alt="" class="cityMap"></picture>
@@ -387,7 +388,7 @@
                               <div class="serviceToBue__left"><span>Дневные пропуска</span><br>7:00 до 23:00</div>
                               <div class="serviceToBue__right"><span>Ночные пропуска</span><br>23:00 до 7:00</div>
                           </div>
-                          <button class="btn services__btn">Подробнее</button>
+                          <a href="#" class="btn our-services__btn">Подробнее</a>
                       </div>
                   </div>
                   <div class="serviceWrapp">
@@ -403,7 +404,7 @@
                               <div class="serviceToBue__left"><span>Дневные пропуска</span><br>7:00 до 23:00</div>
                               <div class="serviceToBue__right"><span>Ночные пропуска</span><br>23:00 до 7:00</div>
                           </div>
-                          <button class="btn services__btn">Подробнее</button>
+                          <a href="#" class="btn our-services__btn">Подробнее</a>
       
                       </div>
                   </div>
@@ -420,7 +421,7 @@
                               <div class="serviceToBue__left"><span>Дневные пропуска</span><br>7:00 до 23:00</div>
                               <div class="serviceToBue__right"><span>Ночные пропуска</span><br>23:00 до 7:00</div>
                           </div>
-                          <button class="btn services__btn">Подробнее</button>
+                          <a href="#" class="btn our-services__btn">Подробнее</a>
       
                       </div>
                   </div>
@@ -445,19 +446,21 @@
                   <label class="chose-form__label">
                     <span>Имя:*</span>
                     <input
-                      class="chose-form__input"
+                      class="input"
                       name="name"
                       type="text"
                       placeholder="ПЁТР"
+                      maxlength="15"
                     />
                   </label>
                   <label class="chose-form__label">
                     <span>Телефон:*</span>
                     <input
-                      class="chose-form__input"
+                      class="input"
                       name="phone-number"
                       type="text"
                       placeholder="8 (999) 900-90-90"
+                      maxlength="15"
                     />
                   </label>
                   <button class="btn chose-form__btn" type="submit">
@@ -593,10 +596,11 @@
                   <label class="cost-form__label">
                     <span>Телефон:*</span>
                     <input
-                      class="cost-form__input"
+                      class="input"
                       name="phone-number"
                       type="text"
                       placeholder="8 (999) 900-90-90"
+                      maxlength="15"
                     />
                   </label>
                   <button class="btn cost-form__btn" type="submit">
@@ -609,7 +613,7 @@
         </section>
         <section class="bonuses">
           <div class="container">
-              <h2 class="section-title">Бонусы для Вас</h2>
+              <h2 class="section-title bonuses__title">Бонусы для Вас</h2>
               <div class="bonusesWrapper">
                   <div class="bonus bonus_left">
                       <div class="bonusTitle">Временный пропуск</div>
@@ -631,7 +635,7 @@
         </section>
         <section class="advantages">
           <div class="container">
-              <h2 class="section-title">Наши преимущества</h2>
+              <h2 class="section-title advantages__title">Наши преимущества</h2>
               <div class="advantagesWrapper">
                   <div class="advantage">
                       <img src="img/advantages/advantage1.svg" alt="Не удалось загрузить изображение" class="advantage__img">
@@ -697,9 +701,11 @@
                   <div class="sms__right">
                       <div class="sms__title">Хотите получить список документов по<span> CMC?</span></div>
                       <div class="sms__text">Оставьте заявку и мы перезвоним вам за <span>30 секунд!</span></div>
-                      <form action="/">
-                          <input class="sms__input" type="text" placeholder="Имя:*">
-                          <input class="sms__input" type="tel" placeholder="Телефон:*">
+                      <form action="/" method="post">
+                          <div class="sms__inputs-wrap">
+                            <input class="input" type="text" name="name" placeholder="Имя:*" maxlength="15">
+                            <input class="input" type="tel" name="phone-number" placeholder="Телефон:*" maxlength="15">
+                          </div>
                           <button class="btn sms__button">получить список документов</button>
                       </form>
                       <div class="sms__accept">Нажимая на кнопку, Вы даете согласие на обработку <a href="">персональных данных</a></div>
@@ -771,27 +777,21 @@
                 <p class="monitoring-form__txt">
                   Вашего пропуска абсолютно <b>бесплатно на 365 дней</b>
                 </p>
-                <div class="monitoring-form__input-number">
-                  <div
-                    class="monitoring-form__input-span monitoring-form__input-span--start"
-                  >
-                    <input
-                      
-                      class="auto-number-start"
-                      type="text"
-                      placeholder="А000АА"
-                    />
-                  </div>
-                  <div
-                    class="monitoring-form__input-span monitoring-form__input-span--end"
-                  >
-                    <input
-                      
-                      class="auto-number-end"
-                      type="text"
-                      placeholder="000"
-                    />
-                  </div>
+                <div id="input-rnis" class="input-rnis monitoring-form__mb">
+                  <input
+                    class="input-rnis__left"
+                    placeholder="А000АА"
+                    type="text"
+                    maxlength="6"
+                    name="rnis-left"
+                  />
+                  <input
+                    class="input-rnis__right"
+                    placeholder="000"
+                    type="text"
+                    maxlength="3"
+                    name="rnis-right"
+                  />
                 </div>
                 <div class="monitoring-form__input-wrap">
                   <input
@@ -799,12 +799,14 @@
                     type="tel"
                     name="phoneNumber"
                     placeholder="Телефон:*"
+                    maxlength="15"
                   />
                   <input
                     class="input monitoring-form__input"
                     type="text"
                     name="name"
                     placeholder="Имя:*"
+                    maxlength="15"
                   />
                 </div>
                 <button class="btn monitoring-form__btn btn--wide">
@@ -825,29 +827,23 @@
                 <h3 class="check-form__title">Проверьте ваш пропуск</h3>
                 <p class="check-form__txt">Введите государственный регистрационный знак ТС (без пробелов)</p>
                 <div class="check-form__wrap">
-                  <div class="monitoring-form__input-number">
-                    <div
-                      class="monitoring-form__input-span monitoring-form__input-span--start"
-                    >
-                      <input
-                        
-                        class="auto-number-start"
-                        type="text"
-                        placeholder="А000АА"
-                      />
-                    </div>
-                    <div
-                      class="monitoring-form__input-span monitoring-form__input-span--end"
-                    >
-                      <input
-                        
-                        class="auto-number-end"
-                        type="text"
-                        placeholder="000"
-                      />
-                    </div>
+                  <div id="input-rnis" class="input-rnis">
+                    <input
+                      class="input-rnis__left"
+                      placeholder="А000АА"
+                      type="text"
+                      maxlength="6"
+                      name="rnis-left"
+                    />
+                    <input
+                      class="input-rnis__right"
+                      placeholder="000"
+                      type="text"
+                      maxlength="3"
+                      name="rnis-right"
+                    />
                   </div>
-                  <button class="btn">проверить</button>
+                  <button class="btn check-form__btn">проверить</button>
                 </div>
               </form>
             </div>
@@ -960,7 +956,7 @@
             <a href="#" class="footer__info-link">
               Политика конфиденциальности
             </a>
-            <a href="#" class="footer__info-link">
+            <a href="/politics.html" class="footer__info-link">
               Политика обработки персональных данных
             </a>
           </div>
@@ -1044,6 +1040,6 @@
 </footer>
 
     </div>
-    <script src="js/app.min.js?_v=20230605230256"></script>
+    <script src="js/app.min.js?_v=20230607175803"></script>
   </body>
 </html>

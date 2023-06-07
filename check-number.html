@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +10,11 @@
   <link href="https://fonts.googleapis.com/css?family=Inter:700&display=swap&_v=20230607175803" rel="stylesheet" />
   <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230607175803" />
   <link rel="stylesheet" href="css/style.min.css?_v=20230607175803">
-  <title>Главная</title>
+  <title>Проверка пропуска по номеру автомобиля</title>
 </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
+<body>
+  <div class="wrapper">
+    <header class="header">
   <div class="header__top header-top">
     <div class="container header__container">
       <div class="header-top__wrap">
@@ -323,161 +323,349 @@
 
 <!-- Доработать выпадающие меню, подключить JS -->
 
-      <main class="main">
-        <section class="why-we">
-          <div class="container why-we__container">
-            <div class="why-we__img-wrap">
-              <img src="img/why-we/accountant.png" alt="" />
-              <div class="why-we__content">
-                <h1 class="section-title why-we__title">
-                  Почему выбирают нашу компанию?
-                </h1>
-                <p class="why-we__txt">
-                  Компания «MOS-PROPUSK-24» — более 7 лет помогаем получать
-                  пропуска на MКАД, ТТK И СК — Мы внимательно проверяем ваши
-                  документы и оперативно отправляем заявку на пропуск. В отличии
-                  от 99% компаний занимающихся оформлением пропусков у нас есть
-                  реальный офис в Москве и мы несем полную ответственность за ваш
-                  пропуск! Нашли вариант дешевле? Знайте, в случае аннуляции
-                  пропуска вы получите огромные штрафы, а фирма, которая оформляла
-                  пропуск перестанет
-                </p>
-              </div>
-            </div>
-            <div class="why-we__info">
-              <ul class="why-we__list">
-                <li class="why-we__item">
-                  Наличный и безналичный расчет с НДС 20% и без!
-                </li>
-                <li class="why-we__item">Гарантия получения 100%!</li>
-                <li class="why-we__item">100% результат Без отказов!</li>
-                <li class="why-we__item">Официально по договору!</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="our-team">
-          <div class="container our-team__container">
-            <h2 class="section-title section-title_small our-team__title">
-              Наши команда
-            </h2>
-            <div class="our-team__wrap">
-              <div class="our-team__card team-card">
-                <div class="team-card__img-wrap">
-                  <picture><source srcset="img/our-team/team-1.webp" type="image/webp"><img src="img/our-team/team-1.png" alt=""></picture>
-                  <picture><source srcset="img/our-team/hover.webp" type="image/webp"><img class="hover-img" src="img/our-team/hover.png" alt=""></picture>
-                  <div class="team-card__content">
-                    <b>
-                      Алексей Орлов
-                    </b>
-                    <span>
-                      Директор по развитию
-                    </span>
+    <main class="main">
+      <section class="check-rnis">
+        <div class="container check-rnis__container">
+          <div class="check-rnis__img-wrap">
+            <img src="img/check-rnis/bg2.png" alt="" />
+            <div class="check-rnis__wrap">
+              <h1 class="section-title check-rnis__title">
+                Проверка пропуска по номеру автомобиля
+              </h1>
+              <form class="check-form" action="/">
+                <label for="input-rnis">
+                  Введите государственный регистрационный знак ТС (без
+                  пробелов)
+                </label>
+                <div class="check-form__input-wrap">
+                  <div id="input-rnis" class="input-rnis">
+                    <input
+                      class="input-rnis__left"
+                      placeholder="А000АА"
+                      type="text"
+                      name="rnis-left"
+                      maxlength="6"
+                    />
+                    <input
+                      class="input-rnis__right"
+                      placeholder="000"
+                      type="text"
+                      name="rnis-right"
+                      maxlength="3"
+                    />
+                  </div>
+                  <div class="check-form__spans-wrap">
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_214_96)">
+                        <path
+                          d="M11 21.3125C16.6954 21.3125 21.3125 16.6954 21.3125 11C21.3125 5.30456 16.6954 0.6875 11 0.6875C5.30456 0.6875 0.6875 5.30456 0.6875 11C0.6875 16.6954 5.30456 21.3125 11 21.3125Z"
+                          fill="#CB2222"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5.94138 16.0587C6.39969 16.5171 7.14967 16.5171 7.60797 16.0587L11.0003 12.6664L14.3927 16.0587C14.851 16.5171 15.6009 16.5171 16.0592 16.0587C16.5175 15.6004 16.5175 14.8505 16.0592 14.3922L12.6669 10.9998L16.0592 7.60748C16.5175 7.14918 16.5175 6.39924 16.0592 5.94094C15.6009 5.48264 14.851 5.48264 14.3927 5.94094L11.0003 9.33324L7.60797 5.9409C7.14967 5.48259 6.39973 5.48259 5.94143 5.9409C5.48312 6.3992 5.48312 7.14914 5.94143 7.60744L9.33372 10.9998L5.94138 14.3922C5.48308 14.8505 5.48308 15.6004 5.94138 16.0587Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_214_96">
+                          <rect width="22" height="22" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11 21.3125C16.6954 21.3125 21.3125 16.6954 21.3125 11C21.3125 5.30456 16.6954 0.6875 11 0.6875C5.30456 0.6875 0.6875 5.30456 0.6875 11C0.6875 16.6954 5.30456 21.3125 11 21.3125Z"
+                        fill="#27AE60"
+                      />
+                      <path
+                        d="M10.9793 14.2265C10.4805 14.7252 9.67132 14.7252 9.17284 14.2265L6.37404 11.4276C5.87532 10.9292 5.87532 10.1199 6.37404 9.62143C6.87252 9.1227 7.68174 9.1227 8.18046 9.62143L9.84799 11.2888C9.97387 11.4144 10.1782 11.4144 10.3043 11.2888L14.8195 6.77346C15.318 6.27473 16.1272 6.27473 16.626 6.77346C16.8655 7.01296 17 7.3379 17 7.67657C17 8.01523 16.8655 8.34018 16.626 8.57968L10.9793 14.2265Z"
+                        fill="white"
+                      />
+                    </svg>
                   </div>
                 </div>
-              </div>
-              <div class="our-team__card team-card">
-                <div class="team-card__img-wrap">
-                  <picture><source srcset="img/our-team/team-2.webp" type="image/webp"><img src="img/our-team/team-2.png" alt=""></picture>
-                  <picture><source srcset="img/our-team/hover.webp" type="image/webp"><img class="hover-img" src="img/our-team/hover.png" alt=""></picture>
-                  <div class="team-card__content">
-                    <b>
-                      Алексей Орлов
-                    </b>
-                    <span>
-                      Директор по развитию
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="our-team__card team-card">
-                <div class="team-card__img-wrap">
-                  <picture><source srcset="img/our-team/team-3.webp" type="image/webp"><img src="img/our-team/team-3.png" alt=""></picture>
-                  <picture><source srcset="img/our-team/hover.webp" type="image/webp"><img class="hover-img" src="img/our-team/hover.png" alt=""></picture>
-                  <div class="team-card__content">
-                    <b>
-                      Алексей Орлов
-                    </b>
-                    <span>
-                      Директор по развитию
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="our-team__card team-card">
-                <div class="team-card__img-wrap">
-                  <picture><source srcset="img/our-team/team-4.webp" type="image/webp"><img src="img/our-team/team-4.png" alt=""></picture>
-                  <picture><source srcset="img/our-team/hover.webp" type="image/webp"><img class="hover-img" src="img/our-team/hover.png" alt=""></picture>
-                  <div class="team-card__content">
-                    <b>
-                      Алексей Орлов
-                    </b>
-                    <span>
-                      Директор по развитию
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="our-clients">
-          <div class="container our-clients__container">
-            <h2 class="section-title section-title_small our-clients__title">
-              Наши клиенты
-            </h2>
-            <div class="our-clients__wrap">
-              <picture><source srcset="img/our-clients/abb-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/abb-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/kostorama-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/kostorama-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/lukoil-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/lukoil-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/red-kit-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/red-kit-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/auchan-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/auchan-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/sportmaster-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/sportmaster-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/samsung-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/samsung-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/park-patriot-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/park-patriot-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/dhl-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/dhl-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/fsb-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/fsb-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/egd-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/egd-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/leroy-merlin-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/leroy-merlin-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/spartak-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/spartak-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/svjaznoi-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/svjaznoi-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/tvc-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/tvc-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/roskosmos-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/roskosmos-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/wildberries-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/wildberries-mos-propusk-24_result.png" alt=""></picture>
-              <picture><source srcset="img/our-clients/beeline-mos-propusk-24_result.webp" type="image/webp"><img src="img/our-clients/beeline-mos-propusk-24_result.png" alt=""></picture>
-            </div>
-          </div>
-        </section>
-        <section class="inn">
-          <div class="container inn__container">
-            <h2 class="section-title section-title_small inn__title">
-              Запросить ИНН нашей организации
-            </h2>
-            <p class="section-txt inn__txt">
-              Заполняйте форму и мы <span>свяжемся с вами в течении 30 секунд</span> и ответим на все интересующие вас вопросы!
-            </p>
-            <div class="inn__wrap">
-              <picture><source srcset="img/consult-form/woman.webp" type="image/webp"><img src="img/consult-form/woman.png" alt="женщина"></picture>
-              <form class="consult-form inn__form" action="/"  method="POST">
-                <h2 class="consult-form__title">
-                  Отправить заявку на <span>консультацию</span>
-                </h2>
-                <div class="consult-form__inputs-wrap">
-                  <input class="input consult-form__input" type="text" placeholder="Имя:*" name="name" maxlength="15">
-                  <input class="input consult-form__input" type="tel" placeholder="Телефон:*" name="phone-number" maxlength="15">
-                  <input class="input consult-form__input" type="text" placeholder="E-mail*" name="mail" maxlength="15">
-                  <textarea class="input consult-form__textarea" rows="fixed" name="" id="" placeholder="Текст сообщения" name="message" maxlength="400"></textarea>
-                </div>
-                <div class="consult-form__btn-wrap">
-                  <button id="consult-form-btn" class="btn">подробнее</button>
-                  <label for="consult-form-btn">Нажимая на кнопку, Вы даете согласие на обработку <a class="underline" href="#">персональных данных</a></label>
+                <div class="check-form__btn-wrap">
+                  <button class="btn">Проверить</button>
+                  <span
+                    >Нажимая на кнопку, Вы даете согласие на
+                    <a href="#" class="underline"
+                      >обработку персональных данных</a
+                    ></span
+                  >
                 </div>
               </form>
             </div>
           </div>
-        </section>
-      </main>
-      <footer class="footer">
+        </div>
+      </section>
+      <section class="freeControl">
+        <div class="container">
+            <h2 class="section-title">Бесплатный круглосуточный контроль за пропуском</h2>
+            <div class="sectionText sectionText_control">Внимание! Специально разработанная и интегрированная 
+                с базой департамента транспорта система контроля выхода временных,
+                 годовых пропусков, а так же аннуляции для всех наших клиентов в 
+                 подарок при заказе любого пропуска МКАД, ТТК, СК!
+            </div>
+            <div class="cotrolWrapper">
+                <div class="control__element">
+                    <picture><source srcset="img/freeControl/control1.webp" type="image/webp"><img src="img/freeControl/control1.png" alt="Не удалось загрузить изображение" class="control__img_under"></picture>
+                    <picture><source srcset="img/freeControl/control5.webp" type="image/webp"><img src="img/freeControl/control5.png" alt="Не удалось загрузить изображение" class="control__img_hover"></picture>
+                    <div class="control__title">Оперативное реагирование</div>
+                    <div class="control__text">оперативное реагирование вашего персонального менеджера в случае аннуляции</div>
+                </div>
+                <div class="control__element">
+                    <picture><source srcset="img/freeControl/control2.webp" type="image/webp"><img src="img/freeControl/control2.png" alt="Не удалось загрузить изображение" class="control__img_under"></picture>
+                    <picture><source srcset="img/freeControl/control6.webp" type="image/webp"><img src="img/freeControl/control6.png" alt="Не удалось загрузить изображение" class="control__img_hover"></picture>
+                    <div class="control__title">Круглосуточный контроль</div>
+                    <div class="control__text">24 часа в сутки, 7 дней в неделю, 365 дней в году</div>
+                </div>
+                <div class="control__element">
+                    <picture><source srcset="img/freeControl/control3.webp" type="image/webp"><img src="img/freeControl/control3.png" alt="Не удалось загрузить изображение" class="control__img_under"></picture>
+                    <picture><source srcset="img/freeControl/control7.webp" type="image/webp"><img src="img/freeControl/control7.png" alt="Не удалось загрузить изображение" class="control__img_hover"></picture>
+                    <div class="control__title">СМС уведомления</div>
+                    <div class="control__text">моментальная интеллектуальная система СМС уведомления, временный, годовой пропуск и аннулирование</div>
+                </div>
+                <div class="control__element">
+                    <picture><source srcset="img/freeControl/control4.webp" type="image/webp"><img src="img/freeControl/control4.png" alt="Не удалось загрузить изображение" class="control__img_under"></picture>
+                    <picture><source srcset="img/freeControl/control8.webp" type="image/webp"><img src="img/freeControl/control8.png" alt="Не удалось загрузить изображение" class="control__img_hover"></picture>
+                    <div class="control__title">Личный кабинет</div>
+                    <div class="control__text">уникальный доступ к личному кабинету защищенному высокотехнологичным шифрованием</div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="toMobile">
+        <div class="container">
+            <div class="toMobileWrapper">
+                <div class="toMobile__left">
+                    <h3 class="toMobile__title">Мобильное приложение</h3> 
+                    <div class="toMobile__text">В приложении вы сможете добавлять автомобили и отслеживать пропуска</div>
+                </div>
+                <div class="toMobile__right">
+                    <button class="toMobile__button toMobile__button_apple">
+                        <picture><source srcset="img/toMobile/apple.webp" type="image/webp"><img src="img/toMobile/apple.png" alt="" class="toMobile__img"></picture>
+                    </button>
+                    <button class="toMobile__button toMobile__button_google">
+                        <picture><source srcset="img/toMobile/google.webp" type="image/webp"><img src="img/toMobile/google.png" alt="" class="toMobile__img"></picture>
+                    </button>
+                </div>    
+            </div>
+        </div>
+      </section>
+      <section class="inn">
+        <div class="container inn__container">
+          <h2 class="section-title section-title_small inn__title">
+            Запросить ИНН нашей организации
+          </h2>
+          <p class="section-txt inn__txt">
+            Заполняйте форму и мы <span>свяжемся с вами в течении 30 секунд</span> и ответим на все интересующие вас вопросы!
+          </p>
+          <div class="inn__wrap">
+            <picture><source srcset="img/consult-form/woman.webp" type="image/webp"><img src="img/consult-form/woman.png" alt="женщина"></picture>
+            <form class="consult-form inn__form" action="/"  method="POST">
+              <h2 class="consult-form__title">
+                Отправить заявку на <span>консультацию</span>
+              </h2>
+              <div class="consult-form__inputs-wrap">
+                <input class="input consult-form__input" type="text" placeholder="Имя:*" name="name" maxlength="15">
+                <input class="input consult-form__input" type="tel" placeholder="Телефон:*" name="phone-number" maxlength="15">
+                <input class="input consult-form__input" type="text" placeholder="E-mail*" name="mail" maxlength="15">
+                <textarea class="input consult-form__textarea" rows="fixed" name="" id="" placeholder="Текст сообщения" name="message" maxlength="400"></textarea>
+              </div>
+              <div class="consult-form__btn-wrap">
+                <button id="consult-form-btn" class="btn">подробнее</button>
+                <label for="consult-form-btn">Нажимая на кнопку, Вы даете согласие на обработку <a class="underline" href="#">персональных данных</a></label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="daily-monitoring">
+        <div class="container">
+          <h2 class="daily-monitoring__title">
+            Подключите круглосуточный мониторинг
+          </h2>
+          <p class="daily-monitoring__txt">
+            Вашего пропуска абсолютно <span>бесплатно на 365 дней</span>
+          </p>
+          <form action="/" class="daily-monitoring__form">
+            <div class="daily-monitoring__inputs-wrap">
+              <div class="input-rnis">
+                <input
+                  class="input-rnis__left"
+                  placeholder="А000АА"
+                  type="text"
+                  maxlength="6"
+                />
+                <input
+                  class="input-rnis__right"
+                  placeholder="000"
+                  type="text"
+                  maxlength="3"
+                />
+              </div>
+              <input type="text" class="input" placeholder="Телефон:*" maxlength="12">
+            </div>
+            <button class="btn daily-monitoring__btn">Хочу контролировать пропуск</button>
+            <span>
+              Нажимая на кнопку, Вы даете согласие на обработку <a href="#" class="underline">персональных данных</a>
+            </span>
+          </form>
+        </div>
+      </section>
+      <section class="infoArea">
+        <div class="container">
+          <h2 class="infoArea__title">
+            Оформление пропусков на МКАД, ТТК и СК в Москве
+          </h2>
+          <div class="infoArea__text">
+            <span>Оформление пропуска в Москве</span> – это всегда сложный
+            процесс, который может отнять достаточно много времени. Заявителям
+            часто приходится сталкиваться с различными проблемами, вплоть до
+            отказа в выдаче документа.
+          </div>
+          <div class="infoArea__text">
+            Компания «MOS-PROPUSK-24» занимается оформлением пропусков уже
+            более 9 лет – за это время мы создали и расширили большую базу
+            клиентов, которые нам доверяют.
+            <span>Предоставляем 100% гарантию на получение пропуска</span>, а
+            также гарантируем, что пропуск не будет аннулирован в течение его
+            срока действия.
+          </div>
+          <div class="infoArea__text">
+            Наша компания ведет свою деятельность, согласно регламенту
+            Департамента транспорта. Мы работаем как с физическими, так и с
+            юридическими лицами. Работаем строго в рамках действующего
+            законодательства в соответствии с Постановлением Правительства
+            города Москва от 22.08.2011 №379-ПП.
+          </div>
+          <h3 class="infoArea__subTitle">Пропуск ТТК</h3>
+          <div class="infoArea__text">
+            Для своих клиентов мы предлагаем различные бонусы, выгодные
+            предложения и акции. Предоставляется
+            <span
+              >временный пропуск на тот период, пока мы будем заниматься
+              оформлением основного пропуска (сроком на 10 дней)</span
+            >
+            . Возможен выезд нашего специалиста.
+          </div>
+          <ul class="infoArea__list">
+            <li>
+              Мы специализируемся на выдаче пропусков в Москве для грузовых
+              автомобилей в следующих зонах: <br />
+            </li>
+            <li class="infoArea__element infoArea__element_first">
+              <span>МКАД</span>
+              – позволяет выезжать на территорию МКАД, перемещаясь в его
+              пределах без права въезда на ТТК.
+            </li>
+            <li class="infoArea__element">
+              <span>ТТК</span>
+              – разрешает движение на территории МКАД и ТТК без права въезда
+              на СК.
+            </li>
+            <li class="infoArea__element">
+              <span>СК</span>
+              – разрешает перемещение по всей территории города (МКАД, ТТК и
+              СК).
+            </li>
+          </ul>
+          <div class="infoArea__text">
+            Перемещение по МКАД, ТТК и СК возможно только в дневное время с
+            7:00 до 23:00 и ночью с 23:00 до 7:00.
+          </div>
+          <div class="infoArea__text">
+            В наши услуги входит не только оформление пропусков, но и
+            <span>оформление диагностической карты</span>, которая является
+            свидетельством, подтверждающим, что автомобиль пригоден для
+            передвижения по российским дорогам.
+          </div>
+          <ul class="infoArea__list">
+            <li>
+              Также, существует ряд ограничений, запрещающих перемещение по
+              городу. По экологическим причинам:
+            </li>
+            <li class="infoArea__element infoArea__element_first">
+              Въезд и перемещение по МКАД, если экологический класс
+              транспортного средства меньше Евро-2.
+            </li>
+            <li class="infoArea__element">
+              Въезд на ТТК и перемещение по центру города, если экологический
+              класс транспортного средства меньше Евро-3
+            </li>
+          </ul>
+          <ul class="infoArea__list">
+            <li>По весовой категории:</li>
+            <li class="infoArea__element infoArea__element_first">
+              Перемещение по городу возможно только при наличии специального
+              пропуска.
+            </li>
+            <li class="infoArea__element">
+              Транспортным средствам с разрешённой массой свыше 12 тонн
+              запрещён въезд на МКАД в любое время.
+            </li>
+            <li class="infoArea__element">
+              Транспортным средствам с разрешенной массой свыше 3.5 тонн
+              запрещен въезд на МКАД с 7:00 до 23:00.
+            </li>
+            <li class="infoArea__element">
+              Транспортным средствам с грузоподъёмностью более 1 тонны
+              запрещён въезд на ТТК.
+            </li>
+          </ul>
+          <div class="infoArea__text">
+            <span>
+              При отсутствии пропуска штраф составляет 5000 рублей за каждый
+              случай фиксации правонарушений.
+            </span>
+          </div>
+          <ul class="contacts__list">
+            <li>
+              Для получения более подробной информации, вы можете связаться с
+              нами:
+            </li>
+            <li class="contacts__element contacts__element_first">
+              По номеру телефона: <span class="tel">8(495) 128-86-89</span>
+            </li>
+            <li class="contacts__element">
+              Написав нам на почту: <a href="#">info@mos-propusk-24.ru</a>
+            </li>
+            <li class="contacts__element">
+              Написав в Telegram:
+              <span>MOS-PROPUSK-24 - Пропуска МКАД, ТТК, СК</span>
+            </li>
+            <li class="contacts__element">
+              Написав в WhatsApp: <span>+7 (967) 555-27-86</span>
+            </li>
+            <li class="contacts__element">
+              Адрес офиса:
+              <span
+                >г. Москва, ул. Соловьиная Роща, 8, офис:
+                «МОС-ПРОПУСК-24».</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="map">
+
+      </section>
+    </main>
+    <footer class="footer">
   <div class="container footer__container">
     <div class="footer__wrap">
       <div class="footer__top footer-top">
@@ -574,7 +762,7 @@
   </div>
 </footer>
 
-    </div>
-    <script src="js/app.min.js?_v=20230607175803"></script>
-  </body>
+  </div>
+  <script src="js/app.min.js?_v=20230607175803"></script>
+</body>
 </html>

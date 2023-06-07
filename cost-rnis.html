@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Golos+Text:regular,500,700&display=swap&_v=20230605230256" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Oswald:regular,500,700&display=swap&_v=20230605230256" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700&display=swap&_v=20230605230256" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Inter:700&display=swap&_v=20230605230256" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230605230256">
+  <link href="https://fonts.googleapis.com/css?family=Golos+Text:regular,500,700&display=swap&_v=20230607175803" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald:regular,500,700&display=swap&_v=20230607175803" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700&display=swap&_v=20230607175803" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:700&display=swap&_v=20230607175803" rel="stylesheet" />
+  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230607175803" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230607175803">
   <title>Стоимость подключения к РНИС</title>
 </head>
   <body>
@@ -191,17 +192,17 @@
           </div>
           <ul class="header-menu__sub-list">
             <li class="header-menu__sub-item">
-              <a href="" class="header-menu__sub-link">
+              <a href="/check-number.html" class="header-menu__sub-link">
                 категория
               </a>
             </li>
             <li class="header-menu__sub-item">
-              <a href="" class="header-menu__sub-link">
+              <a href="/info.html" class="header-menu__sub-link">
                 категория
               </a>
             </li>
             <li class="header-menu__sub-item">
-              <a href="" class="header-menu__sub-link">
+              <a href="/article.html" class="header-menu__sub-link">
                 категория
               </a>
             </li>
@@ -307,13 +308,13 @@
           <a href="" class="header-menu__link">Проверка пропуска</a>
         </li>
         <li class="header-menu__item">
-          <a href="" class="header-menu__link">Отзывы</a>
+          <a href="/reviews.html" class="header-menu__link">Отзывы</a>
         </li>
         <li class="header-menu__item">
-          <a href="" class="header-menu__link">Информация</a>
+          <a href="/info.html" class="header-menu__link">Информация</a>
         </li>
         <li class="header-menu__item">
-          <a href="" class="header-menu__link">Контакты</a>
+          <a href="/contacts.html" class="header-menu__link">Контакты</a>
         </li>
       </ul>
     </div>
@@ -641,56 +642,72 @@
           <div class="container">
             <h2 class="section-title questions__title">Часто задаваемые вопросы</h2>
             <div class="question-wrapper">
-              <div id="question" class="question__title">
-                <div>Что такое РНИС?</div>
-                <img class="question_img" src="img/questions/arrow.svg" alt="" />
+              <div  class="question__title">
+                Что такое РНИС?
+                <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.76769 0.93934C2.1819 0.353553 1.23216 0.353553 0.646371 0.93934C0.0605846 1.52513 0.0605846 2.47487 0.646371 3.06066L11.253 13.6673C11.5548 13.9691 11.9534 14.1154 12.3489 14.1062C12.7475 14.1179 13.1498 13.9717 13.4541 13.6675L24.0607 3.0609C24.6464 2.47512 24.6464 1.52537 24.0607 0.939584C23.4749 0.353798 22.5251 0.353797 21.9393 0.939584L12.3536 10.5253L2.76769 0.93934Z" fill="#B5B5B5"/>
+                </svg>  
               </div>
-              <div id="answer" class="question__description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              <div  class="question__description">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
                 aliquam fuga debitis nisi. Facere, quis. Quae consectetur nulla
                 praesentium aperiam quasi debitis molestias totam eum nostrum,
                 eius eligendi consequatur at?
+                </p>
               </div>
             </div>
             <div class="question-wrapper">
-              <div id="question" class="question__title">
-                <div>Для чего используется ГЛОНАС и GPS?</div>
-                <img class="question_img" src="img/questions/arrow.svg" alt="" />
+              <div  class="question__title">
+                Для чего используется ГЛОНАС и GPS?
+                <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.76769 0.93934C2.1819 0.353553 1.23216 0.353553 0.646371 0.93934C0.0605846 1.52513 0.0605846 2.47487 0.646371 3.06066L11.253 13.6673C11.5548 13.9691 11.9534 14.1154 12.3489 14.1062C12.7475 14.1179 13.1498 13.9717 13.4541 13.6675L24.0607 3.0609C24.6464 2.47512 24.6464 1.52537 24.0607 0.939584C23.4749 0.353798 22.5251 0.353797 21.9393 0.939584L12.3536 10.5253L2.76769 0.93934Z" fill="#B5B5B5"/>
+                </svg> 
               </div>
-              <div id="answer" class="question__description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              <div  class="question__description">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
                 aliquam fuga debitis nisi. Facere, quis. Quae consectetur nulla
                 praesentium aperiam quasi debitis molestias totam eum nostrum,
                 eius eligendi consequatur at?
+                </p>
               </div>
             </div>
             <div class="question-wrapper">
-              <div id="question" class="question__title">
-                <div>Какое оборудование мы устанавливаем?</div>
-                <img class="question_img" src="img/questions/arrow.svg" alt="" />
+              <div  class="question__title">
+                Какое оборудование мы устанавливаем?
+                <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.76769 0.93934C2.1819 0.353553 1.23216 0.353553 0.646371 0.93934C0.0605846 1.52513 0.0605846 2.47487 0.646371 3.06066L11.253 13.6673C11.5548 13.9691 11.9534 14.1154 12.3489 14.1062C12.7475 14.1179 13.1498 13.9717 13.4541 13.6675L24.0607 3.0609C24.6464 2.47512 24.6464 1.52537 24.0607 0.939584C23.4749 0.353798 22.5251 0.353797 21.9393 0.939584L12.3536 10.5253L2.76769 0.93934Z" fill="#B5B5B5"/>
+                </svg> 
               </div>
-              <div id="answer" class="question__description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              <div  class="question__description">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
                 aliquam fuga debitis nisi. Facere, quis. Quae consectetur nulla
                 praesentium aperiam quasi debitis molestias totam eum nostrum,
                 eius eligendi consequatur at?
+                </p>
               </div>
             </div>
             <div class="question-wrapper">
-              <div id="question" class="question__title">
-                <div>
+              <div  class="question__title">
+                
                   Обязательно ли устанавливать трекеры GPS и ГЛОНАСС для
                   подключения к РНИС?
-                </div>
-                <img class="question_img" src="img/questions/arrow.svg" alt="" />
+              
+                <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.76769 0.93934C2.1819 0.353553 1.23216 0.353553 0.646371 0.93934C0.0605846 1.52513 0.0605846 2.47487 0.646371 3.06066L11.253 13.6673C11.5548 13.9691 11.9534 14.1154 12.3489 14.1062C12.7475 14.1179 13.1498 13.9717 13.4541 13.6675L24.0607 3.0609C24.6464 2.47512 24.6464 1.52537 24.0607 0.939584C23.4749 0.353798 22.5251 0.353797 21.9393 0.939584L12.3536 10.5253L2.76769 0.93934Z" fill="#B5B5B5"/>
+                </svg> 
               </div>
-              <div id="answer" class="question__description">
-                Кстати, диаграммы связей набирают популярность среди
-                определенных слоев населения, а значит, должны быть разоблачены.
-                Безусловно, синтетическое тестирование в значительной степени
-                обусловливает важность переосмысления внешнеэкономических
-                политик. Но независимые государства, превозмогая сложившуюся
-                непростую экономическую ситуацию, описаны максимально подробно.
+              <div  class="question__description">
+                <p>
+                  Кстати, диаграммы связей набирают популярность среди
+                  определенных слоев населения, а значит, должны быть разоблачены.
+                  Безусловно, синтетическое тестирование в значительной степени
+                  обусловливает важность переосмысления внешнеэкономических
+                  политик. Но независимые государства, превозмогая сложившуюся
+                  непростую экономическую ситуацию, описаны максимально подробно.
+                </p>
               </div>
             </div>
           </div>
@@ -1365,7 +1382,7 @@
             <a href="#" class="footer__info-link">
               Политика конфиденциальности
             </a>
-            <a href="#" class="footer__info-link">
+            <a href="/politics.html" class="footer__info-link">
               Политика обработки персональных данных
             </a>
           </div>
@@ -1449,6 +1466,6 @@
 </footer>
 
     </div>
-    <script src="js/app.min.js?_v=20230605230256"></script>
+    <script src="js/app.min.js?_v=20230607175803"></script>
   </body>
 </html>
